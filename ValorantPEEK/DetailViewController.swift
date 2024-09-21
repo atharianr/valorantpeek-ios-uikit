@@ -24,6 +24,14 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var valorantAgent4thSkillImageView: UIImageView!
     
+    @IBOutlet weak var valorantAgent1stSkillLoading: UIActivityIndicatorView!
+    
+    @IBOutlet weak var valorantAgent2ndSkillLoading: UIActivityIndicatorView!
+    
+    @IBOutlet weak var valorantAgent3rdSkillLoading: UIActivityIndicatorView!
+    
+    @IBOutlet weak var valorantAgent4thSkillLoading: UIActivityIndicatorView!
+    
     @IBOutlet weak var valorantAgent1stSkillLabel: UILabel!
     
     @IBOutlet weak var valorantAgent2ndSkillLabel: UILabel!
@@ -46,6 +54,11 @@ class DetailViewController: UIViewController {
             valorantAgentNameLabel.text = result.name
             
             valorantAgentDescriptionLabel.text = result.description
+            
+            valorantAgent1stSkillLoading.startAnimating()
+            valorantAgent2ndSkillLoading.startAnimating()
+            valorantAgent3rdSkillLoading.startAnimating()
+            valorantAgent4thSkillLoading.startAnimating()
             
             valorantAgent1stSkillImageView.kf.setImage(with: URL(string: result.skills[0].skillImage))
             valorantAgent2ndSkillImageView.kf.setImage(with: URL(string: result.skills[1].skillImage))

@@ -41,6 +41,7 @@ extension ViewController: UITableViewDataSource {
     }
     
     private func setupCell(cell: ValorantAgentTableViewCell, agent: ValorantAgent) -> ValorantAgentTableViewCell {
+        cell.valorantAgentLoadingIndicator.startAnimating()
         cell.valorantAgentImageView.layer.borderWidth = 1
         cell.valorantAgentImageView.layer.masksToBounds = false
         cell.valorantAgentImageView.layer.borderColor = UIColor.ValorantPeekPrimaryColor.cgColor

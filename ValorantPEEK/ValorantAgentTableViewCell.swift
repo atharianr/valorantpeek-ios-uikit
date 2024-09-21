@@ -13,6 +13,8 @@ class ValorantAgentTableViewCell: UITableViewCell {
     
     @IBOutlet weak var valorantAgentNameLabel: UILabel!
     
+    @IBOutlet weak var valorantAgentLoadingIndicator: UIActivityIndicatorView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }

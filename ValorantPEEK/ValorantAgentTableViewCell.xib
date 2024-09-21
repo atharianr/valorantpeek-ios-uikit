@@ -17,6 +17,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="369" height="216"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="cDO-I0-YxG">
+                        <rect key="frame" x="166" y="89.666666666666671" width="37" height="37"/>
+                        <color key="color" name="ValorantPeekPrimaryColor"/>
+                    </activityIndicatorView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pat-Dg-4YB">
                         <rect key="frame" x="16" y="8" width="337" height="200"/>
                         <constraints>
@@ -35,8 +39,10 @@
                     <constraint firstItem="8Fl-Xv-hAA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="16" id="2y5-XV-RCQ"/>
                     <constraint firstItem="pat-Dg-4YB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="7Zv-c8-1Cb"/>
                     <constraint firstItem="pat-Dg-4YB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="C4c-cU-RMm"/>
+                    <constraint firstItem="cDO-I0-YxG" firstAttribute="centerY" secondItem="pat-Dg-4YB" secondAttribute="centerY" id="D3P-l5-4Oe"/>
                     <constraint firstAttribute="bottomMargin" secondItem="8Fl-Xv-hAA" secondAttribute="bottom" constant="16" id="W15-eG-UaJ"/>
                     <constraint firstAttribute="trailing" secondItem="pat-Dg-4YB" secondAttribute="trailing" constant="16" id="YCj-zJ-yTg"/>
+                    <constraint firstItem="cDO-I0-YxG" firstAttribute="centerX" secondItem="pat-Dg-4YB" secondAttribute="centerX" id="gsd-lp-z8H"/>
                     <constraint firstAttribute="trailingMargin" secondItem="8Fl-Xv-hAA" secondAttribute="trailing" constant="16" id="jha-Iy-2dF"/>
                     <constraint firstItem="8Fl-Xv-hAA" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="16" id="rTs-Yx-grI"/>
                     <constraint firstAttribute="bottom" secondItem="pat-Dg-4YB" secondAttribute="bottom" constant="8" id="zEC-wf-wtf"/>
@@ -45,14 +51,18 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="valorantAgentImageView" destination="pat-Dg-4YB" id="N6e-SY-Ey1"/>
+                <outlet property="valorantAgentLoadingIndicator" destination="cDO-I0-YxG" id="Ks0-0H-nUr"/>
                 <outlet property="valorantAgentNameLabel" destination="8Fl-Xv-hAA" id="rkr-7i-8Tm"/>
             </connections>
             <point key="canvasLocation" x="115.26717557251908" y="79.577464788732399"/>
         </tableViewCell>
     </objects>
     <resources>
+        <namedColor name="ValorantPeekPrimaryColor">
+            <color red="0.86299997568130493" green="0.23899999260902405" blue="0.29399999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="ValorantPeekSecondaryColor">
-            <color red="0.090196078431372548" green="0.13725490196078433" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.090000003576278687" green="0.13699999451637268" blue="0.21199999749660492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
