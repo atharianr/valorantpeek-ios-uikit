@@ -41,6 +41,7 @@ extension ViewController: UITableViewDataSource {
     }
     
     private func setupCell(cell: ValorantAgentTableViewCell, agent: ValorantAgent) -> ValorantAgentTableViewCell {
+        cell.valorantAgentLoadingIndicator.isHidden = false
         cell.valorantAgentLoadingIndicator.startAnimating()
         cell.valorantAgentImageView.layer.borderWidth = 1
         cell.valorantAgentImageView.layer.masksToBounds = false
@@ -48,6 +49,13 @@ extension ViewController: UITableViewDataSource {
         cell.valorantAgentImageView.layer.cornerRadius = 16
         cell.valorantAgentImageView.clipsToBounds = true
         cell.valorantAgentImageView.kf.setImage(with: URL(string: agent.image))
+        cell.valorantAgentImageView.kf.setImage(
+            with: URL(string: agent.image),
+            completionHandler: { result in
+                cell.valorantAgentLoadingIndicator.isHidden = true
+                cell.valorantAgentLoadingIndicator.stopAnimating()
+            }
+        )
         cell.valorantAgentNameLabel.text = agent.name
         return cell
     }

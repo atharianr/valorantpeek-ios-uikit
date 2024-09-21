@@ -55,15 +55,47 @@ class DetailViewController: UIViewController {
             
             valorantAgentDescriptionLabel.text = result.description
             
+            valorantAgent1stSkillLoading.isHidden = false
+            valorantAgent2ndSkillLoading.isHidden = false
+            valorantAgent3rdSkillLoading.isHidden = false
+            valorantAgent4thSkillLoading.isHidden = false
+            
             valorantAgent1stSkillLoading.startAnimating()
             valorantAgent2ndSkillLoading.startAnimating()
             valorantAgent3rdSkillLoading.startAnimating()
             valorantAgent4thSkillLoading.startAnimating()
             
-            valorantAgent1stSkillImageView.kf.setImage(with: URL(string: result.skills[0].skillImage))
-            valorantAgent2ndSkillImageView.kf.setImage(with: URL(string: result.skills[1].skillImage))
-            valorantAgent3rdSkillImageView.kf.setImage(with: URL(string: result.skills[2].skillImage))
-            valorantAgent4thSkillImageView.kf.setImage(with: URL(string: result.skills[3].skillImage))
+            valorantAgent1stSkillImageView.kf.setImage(
+                with: URL(string: result.skills[0].skillImage),
+                completionHandler: { result in
+                    self.valorantAgent1stSkillLoading.isHidden = true
+                    self.valorantAgent1stSkillLoading.stopAnimating()
+                }
+            )
+            
+            valorantAgent2ndSkillImageView.kf.setImage(
+                with: URL(string: result.skills[1].skillImage),
+                completionHandler: { result in
+                    self.valorantAgent2ndSkillLoading.isHidden = true
+                    self.valorantAgent2ndSkillLoading.stopAnimating()
+                }
+            )
+            
+            valorantAgent3rdSkillImageView.kf.setImage(
+                with: URL(string: result.skills[2].skillImage),
+                completionHandler: { result in
+                    self.valorantAgent3rdSkillLoading.isHidden = true
+                    self.valorantAgent3rdSkillLoading.stopAnimating()
+                }
+            )
+            
+            valorantAgent4thSkillImageView.kf.setImage(
+                with: URL(string: result.skills[3].skillImage),
+                completionHandler: { result in
+                    self.valorantAgent4thSkillLoading.isHidden = true
+                    self.valorantAgent4thSkillLoading.stopAnimating()
+                }
+            )
             
             valorantAgent1stSkillLabel.text = result.skills[0].skillName
             valorantAgent2ndSkillLabel.text = result.skills[1].skillName
