@@ -22,7 +22,7 @@ struct ValorantAgentSkill {
 let valorantAgents = [
     ValorantAgent(
         name: "Brimstone",
-        description: "Liam \"Brimstone\" Byrne is the commander of the VALORANT Protocol, a secretive organization tasked with protecting Earth from cataclysmic disasters and dangerous situations involving radianite. A former firefighter and soldier from Baltimore, Byrne is fiercely loyal to all his allies and organizations, always keeps his squadmates close. But although he would do anything for them, Byrne hasn't always been able to save everyone. After the death of a close friend, Tariq Porter, his loss greatly affected Byrne, haunted by what had happened despite all his own best efforts to save him. It was around this time that he would then join Kingdom Corporation, giving him something at a time when he needed it most. Byrne would go on to become a veteran of Kingdom's K-SEC branch, once again developing a strong loyalty to his employer.",
+        description: "Liam \"Brimstone\" Byrne is the commander of the VALORANT Protocol, a secretive organization tasked with protecting Earth from cataclysmic disasters and dangerous situations involving radianite. A former firefighter and soldier from Baltimore, Byrne is fiercely loyal to all his allies and organizations, always keeps his squadmates close.",
         image: "https://static1-us.millenium.gg/articles/4/13/52/4/@/144651-brimstone-article_image_d-3.jpg",
         skills: [
             ValorantAgentSkill(skillName: "STIM BEACON", skillImage: "https://static.wikia.nocookie.net/valorant/images/a/ad/Stim_Beacon.png"),
@@ -33,7 +33,7 @@ let valorantAgents = [
     ),
     ValorantAgent(
         name: "Viper",
-        description: "Viper is a savage and confident agent who doesn't fear enemies, and in fact desires the enemies' fear. She does not hesitate to call herself a villain and a monster, and will act like both if it means the success of her objective. Just like her abilities, she can be quite \"toxic\", however she is seen being more amiable and caring towards her teammates, but she will not hesitate to reprimand them harshly should they make major miscalculations in the battlefield.",
+        description: "Viper is a savage and confident agent who doesn't fear enemies, and in fact desires the enemies' fear. She does not hesitate to call herself a villain and a monster, and will act like both if it means the success of her objective.",
         image: "https://static1-us.millenium.gg/articles/6/13/53/6/@/144669-viper-article_image_d-3.jpg",
         skills: [
             ValorantAgentSkill(skillName: "SNAKE BITE", skillImage: "https://static.wikia.nocookie.net/valorant/images/a/a2/Snake_Bite.png/revision/latest/scale-to-width-down/115?cb=20200405224128"),
@@ -44,7 +44,7 @@ let valorantAgents = [
     ),
     ValorantAgent(
         name: "Omen",
-        description: "Omen is a phantom of a man with mysterious origins and many names. He has a limited memory of his past, though he does remember being involved in something that caused him to be ripped apart and killed. All he knows that links to who he used to be is a place known as Point Light, a past friendship with Sabine \"Viper\" Callas, and feelings of restoration with every kill he makes. Contributing to the formation of the VALORANT Protocol, Omen would go on to become its third recruit and serve as one of its more experienced agents, all while he continues his search for answers about what truly happened to him over a decade ago.",
+        description: "Omen is a phantom of a man with mysterious origins and many names. He has a limited memory of his past, though he does remember being involved in something that caused him to be ripped apart and killed. All he knows that links to who he used to be is a place known as Point Light, a past friendship with Sabine \"Viper\" Callas, and feelings of restoration with every kill he makes.",
         image: "https://static1-us.millenium.gg/articles/2/13/51/2/@/144603-omen-article_image_d-3.jpg",
         skills: [
             ValorantAgentSkill(skillName: "SHROUDED STEP", skillImage: "https://static.wikia.nocookie.net/valorant/images/8/80/Shrouded_Step.png/revision/latest/scale-to-width-down/115?cb=20200405212629"),
@@ -55,7 +55,7 @@ let valorantAgents = [
     ),
     ValorantAgent(
         name: "Killjoy",
-        description: "Killjoy is a young German woman with slick dark brown hair and brown eyes. She is often seen wearing a padded yellow jacket with a blue interior, purple \"X\" patches on either shoulder and a green beanie-like hat. Underneath the jacket she wears a gray shirt with a rising bars graphic. She has round glasses with black outlines, a pair of silver hoop earrings in either ear, and a pair of green shoes that resemble Converse Chuck Taylor's with silver toes and loose tongues. Covering her hands are a pair of black gloves with blue straps that exposes her ring and pinkie fingers. She wears black ripped skinny jeans with a green strap on her left thigh which is also connected to a fanny pack.",
+        description: "Killjoy is a young German woman with slick dark brown hair and brown eyes. She is often seen wearing a padded yellow jacket with a blue interior, purple \"X\" patches on either shoulder and a green beanie-like hat. Underneath the jacket she wears a gray shirt with a rising bars graphic.",
         image: "https://static1-us.millenium.gg/articles/5/19/59/5/@/195100-killjoy-orig-1-article_image_d-1.jpeg",
         skills: [
             ValorantAgentSkill(skillName: "NANOSWARM", skillImage: "https://static.wikia.nocookie.net/valorant/images/4/4d/Nanoswarm.png/revision/latest/scale-to-width-down/115?cb=20200804132242"),
@@ -67,7 +67,7 @@ let valorantAgents = [
     ValorantAgent(
         name: "Sova",
         description:
-            "Sova has a fair skin tone and sports long blond hair that flows down to his shoulders. He has a bionic right eye with blue lenses. He is seen wearing a fur-lined coat suited for the cold weather of his home along with a dark blue cape with a white leaf-shaped symbol on the left shoulder and a X-shape on the back. He wears archery leather gloves and his owl drone rests against his left forearm. His bow is slung across his back in an easy-to-reach position. His boots take on the appearance of owls. His quiver of shock darts is located on the side of his right thigh and he has a hunting knife strapped against his left calf.",
+            "Sova has a fair skin tone and sports long blond hair that flows down to his shoulders. He has a bionic right eye with blue lenses. He is seen wearing a fur-lined coat suited for the cold weather of his home along with a dark blue cape with a white leaf-shaped symbol on the left shoulder and a X-shape on the back.",
         image: "https://static1-us.millenium.gg/articles/3/13/50/3/@/144525-sova-article_image_d-3.jpg",
         skills: [
             ValorantAgentSkill(
@@ -115,7 +115,7 @@ let valorantAgents = [
     ValorantAgent(
         name: "Phoenix",
         description:
-            "A duelist by role and nature, Phoenix is brash, impulsive, and has a lot of confidence, never hesitating to charge into a fight head-on despite not getting a full grasp of the situation, much to the chagrin of his more collected teammates. If he gets himself in a sticky situation caused by his own impatience, he is more than capable of quickly adapting to the circumstances and turning the tables around, before rubbing it in the faces of teammates who initially doubted him.",
+            "A duelist by role and nature, Phoenix is brash, impulsive, and has a lot of confidence, never hesitating to charge into a fight head-on despite not getting a full grasp of the situation, much to the chagrin of his more collected teammates.",
         image: "https://static1-us.millenium.gg/articles/8/13/54/8/@/144762-phoenix-article_image_d-3.jpg",
         skills: [
             ValorantAgentSkill(
@@ -139,7 +139,7 @@ let valorantAgents = [
     ValorantAgent(
         name: "Jett",
         description:
-            "The wind is commonly known for being cool, but Jett is an aggressive agent who has a distinctive, sarcastic personality. Jett also has a cheeky, childish 'in-your-face' attitude, seen commonly giving insults for feats she makes on the team and is always spouting her sheer amount of arrogance. Her self-confidence may feel as if she is disregarding her comrades' safety, but she has recognized that it is best to play with a team, albeit with some reluctance. She does show a much more friendly personality towards teammates.",
+            "The wind is commonly known for being cool, but Jett is an aggressive agent who has a distinctive, sarcastic personality. Jett also has a cheeky, childish 'in-your-face' attitude, seen commonly giving insults for feats she makes on the team and is always spouting her sheer amount of arrogance.",
         image: "https://static1-us.millenium.gg/articles/7/13/52/7/@/144657-jett-article_image_d-3.jpg",
         skills: [
             ValorantAgentSkill(
@@ -163,7 +163,7 @@ let valorantAgents = [
     ValorantAgent(
         name: "Reyna",
         description:
-            "Reyna takes what she wants when she wants it, no matter who is standing in her way. Savage and almost animalistic, she is not one to hesitate when it comes to eliminating her enemies and getting blood on her hands. She has a strong dislike for technology and thrives on the enemy's misery, and loves to compete with fellow Radiants to see who is the most powerful.",
+            "Reyna takes what she wants when she wants it, no matter who is standing in her way. Savage and almost animalistic, she is not one to hesitate when it comes to eliminating her enemies and getting blood on her hands. She has a strong dislike for technology and thrives on the enemy.",
         image: "https://static1-us.millenium.gg/articles/5/18/37/5/@/183597-reyna-article_image_d-1.jpg",
         skills: [
             ValorantAgentSkill(
@@ -180,7 +180,31 @@ let valorantAgents = [
             ),
             ValorantAgentSkill(
                 skillName: "EMPRESS",
-                skillImage: "https://static.wikia.nocookie.net/valorant/images/1/19/Empress.png/revision/latest/scale-to-width-down/115?cb=20200802072707"
+                skillImage: "https://static.wikia.nocookie.net/valorant/images/1/12/Empress.png/revision/latest/scale-to-width-down/115?cb=20200802072724"
+            ),
+        ]
+    ),
+    ValorantAgent(
+        name: "Cypher",
+        description:
+            "Cypher is constantly gathering secrets, information, and intel, to the point of managing to retrieve the passwords of everyone in the VALORANT Protocol. His continued passion to gather whatever information he can find is not always shared by his teammates, as Jett found out the hard way during an undercover mission in Los Angeles.",
+        image: "https://static1-us.millenium.gg/articles/3/13/53/3/@/144663-cypher-article_image_d-3.jpg",
+        skills: [
+            ValorantAgentSkill(
+                skillName: "TRAPWIRE",
+                skillImage: "https://static.wikia.nocookie.net/valorant/images/0/01/Trapwire.png/revision/latest/scale-to-width-down/115?cb=20200405222341"
+            ),
+            ValorantAgentSkill(
+                skillName: "CYBER CAGE",
+                skillImage: "https://static.wikia.nocookie.net/valorant/images/7/7c/Cyber_Cage.png/revision/latest/scale-to-width-down/115?cb=20200405222332"
+            ),
+            ValorantAgentSkill(
+                skillName: "SPYCAM",
+                skillImage: "https://static.wikia.nocookie.net/valorant/images/3/3f/Spycam.png/revision/latest/scale-to-width-down/115?cb=20200405222325"
+            ),
+            ValorantAgentSkill(
+                skillName: "NEURAL THEFT",
+                skillImage: "https://static.wikia.nocookie.net/valorant/images/4/42/Neural_Theft.png/revision/latest/scale-to-width-down/115?cb=20200405222316"
             ),
         ]
     )
